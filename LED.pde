@@ -6,6 +6,7 @@ class LED
   int x, y;
   byte  r, g, b;
   
+  
   LED(int _x, int _y)//contstructor that tells us what to do when an LED class object is bought into existance. Expects x and y coordinates.
   {
     x = _x;
@@ -16,7 +17,7 @@ class LED
 //The array of LED options
 LED[] ledArray = new LED[countLEDs];
 
-void InitializeledArray()
+void InitializeLEDArray()
 {
 ledArray[0] = new LED(0,0);
 ledArray[1] = new LED(0,1);

@@ -1,5 +1,6 @@
 
 
+
 void setup()
 {
   fullScreen();
@@ -12,5 +13,8 @@ void setup()
 void draw()
 {
  
+  CosGame(); //name of the current game being played
+  
+  DisplayLedsOnScreen();
   
 }

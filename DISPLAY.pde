@@ -1,8 +1,7 @@
 
 
-void drawLeds()
+
+ void DisplayLedsOnScreen()  
 {
-  
-  
   
 }
