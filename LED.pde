@@ -4,7 +4,7 @@ int countLEDs = 2030;
 class LED 
 {
   int x, y;
-  byte  r, g, b;
+  float  r, g, b;
   
   
   LED(int _x, int _y)//contstructor that tells us what to do when an LED class object is bought into existance. Expects x and y coordinates.

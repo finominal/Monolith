@@ -3,9 +3,14 @@
 
 void CosGame()
 {
-   for (LED currentLED : ledArray) 
+   for (int idx = 0; idx<ledArray.length; idx++) 
    { 
-     currentLED.r = (byte) cos_wave[255 % (currentLED.x + currentLED.y )];
+     int combine = cos_wave[ ((ledArray[idx].x +frameCount) *5 )% 255]
+                   + sin_wave[((ledArray[idx].y + (frameCount/2))*5)  % 255];
+       
+     
+     ledArray[idx].r = combine/2;
+     
     } 
     
 }
